@@ -12,7 +12,7 @@ namespace WorkerApp
                 var request = new HttpRequestMessage
                 {
                     Method = HttpMethod.Get,
-                    RequestUri = new Uri($"https://api.openweathermap.org/data/2.5/forecast/daily?q={city}&cnt={daysCount}&units=metric&appid=886705b4c1182eb1c69f28eb8c520e20"),
+                    RequestUri = new Uri($"https://api.openweathermap.org/data/2.5/forecast/daily?q={city}&cnt={daysCount}&units=metric&appid="),
                 };
                 using (var response = client.SendAsync(request).Result)
                 {
